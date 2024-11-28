@@ -7,7 +7,7 @@
 .markdown ol,
 .markdown blockquote,
 .markdown div {
-  @apply my-4 text-base;
+  @apply my-6 text-base;
 }
 
 .markdown h2 {
@@ -47,6 +47,10 @@
   background: #8998aa32;
   border-radius: 4px;
   vertical-align: .08em;
+}
+
+.markdown pre code {
+  padding: 0;
 }
 
 .markdown table {
