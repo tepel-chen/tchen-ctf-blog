@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.code-block-container {
+    position: relative;
+}
+
+  
+.code-block-filename-container {
+    position: absolute;
+    top: -1em;
+    left: 1em;
+    padding: 0 0.8rem;
+    border-radius: 0 0 4px 4px;
+    background-color: #ffffff20;
+}
+
+
+.code-block-filename-container + pre[class*=language-] {
+    padding: 2em 1em 1em 1em;
+}
