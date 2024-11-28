@@ -28,7 +28,7 @@ export default async function Post(props: Params) {
             date={post.date}
             lang={post.lang}
           />
-          <div className="grid grid-cols-4">
+          <div className="grid md:grid-cols-4 grid-cols-1">
             <PostBody content={content} />
             <PostToc toc={toc} title={post.title} />
           </div>

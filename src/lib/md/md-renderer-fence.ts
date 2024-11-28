@@ -82,6 +82,7 @@ export function parseInfo(str: string): {
     fileName = langInfo;
     const spltted = fileName.split('.');
     langInfo = spltted[spltted.length - 1];
+    if(langInfo === fileName) fileName = ''
   }
 
   const langNames = langInfo.split(' ');

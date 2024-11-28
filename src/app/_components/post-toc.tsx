@@ -18,7 +18,7 @@ export function PostToc({ toc, title }: Props) {
           <li key={item.id}>
             <a
               href={`#${item.id}`}
-              className="text-cyan-600 dark:text-cyan-400 hover:underline hover:text-cyan-800 dark:hover:text-cyan-600 transition-colors"
+              className="text-sky-700 dark:text-sky-400 hover:underline hover:text-cyan-800 dark:hover:text-cyan-600 transition-colors"
             >
               {item.text}
             </a>
@@ -30,7 +30,7 @@ export function PostToc({ toc, title }: Props) {
   };
 
   return (
-    <div className="col-span-1">
+    <div className="col-span-1 md:order-2 order-1">
       <nav className="sticky top-4 p-4 overflow-auto">
         <h2 className="text-xl font-bold mb-8">{title}</h2>
         {renderToc(toc)}

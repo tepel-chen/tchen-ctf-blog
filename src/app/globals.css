@@ -9,11 +9,12 @@
   
 .code-block-filename-container {
     position: absolute;
-    top: -1em;
+    top: -1.5em;
     left: 1em;
     padding: 0 0.8rem;
     border-radius: 0 0 4px 4px;
     background-color: #ffffff20;
+    color: white;
 }
 
 
