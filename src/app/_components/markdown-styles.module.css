@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg leading-relaxed;
+  @apply leading-relaxed;
 }
 
 .markdown p,
@@ -7,7 +7,7 @@
 .markdown ol,
 .markdown blockquote,
 .markdown div {
-  @apply my-6 text-base;
+  @apply my-6 md:text-base text-sm;
 }
 
 .markdown h2 {
@@ -52,7 +52,7 @@ html[class*="dark"] .markdown a {
 }
 
 .markdown code {
-  @apply py-1 px-1.5 bg-sky-100 text-sm rounded;
+  @apply py-1 px-1.5 bg-sky-100 md:text-sm text-xs rounded;
   vertical-align: .08em;
 }
 
@@ -64,7 +64,7 @@ html[class*="dark"] .markdown pre code {
 }
 
 .markdown pre code {
-  padding: 0;
+  @apply p-0 md:text-sm text-xs;
 }
 
 .markdown table {

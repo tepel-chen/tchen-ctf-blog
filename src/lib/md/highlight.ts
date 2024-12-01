@@ -6,6 +6,7 @@ import "prismjs/components/prism-sql.min.js";
 import "prismjs/components/prism-markup-templating.min.js";
 import "prismjs/components/prism-php.min.js";
 import "prismjs/components/prism-java.min.js";
+import "prismjs/components/prism-docker.min.js";
 
 
 /*
