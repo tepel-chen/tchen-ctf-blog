@@ -163,7 +163,7 @@ Can we manipulate the query to run an arbitrary query to Redis?
 
 ### Solution
 
-[`String.prototype.replace`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/replace) replaces only the first occurrence of the substring. (If you need to replace all occurrence, you need to use [`String.prototype.replaceAll](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll).) Hence, you can inject `\r\n` by repeating it more than once.
+[`String.prototype.replace`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/replace) replaces only the first occurrence of the substring. (If you need to replace all occurrence, you need to use [`String.prototype.replaceAll`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll).) Hence, you can inject `\r\n` by repeating it more than once.
 
 You can use`GET flag` to query for the flag. However, you won't be able to see the content of the flag with `INCR dog\r\nGET flag\r\n` because the result of the query looks like this:
 
