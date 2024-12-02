@@ -1,6 +1,6 @@
 export type Post = {
   slug: string;
-  lang: 'en' | 'JA';
+  lang: 'EN' | 'JA';
   title: string;
   date: string;
   content: string;

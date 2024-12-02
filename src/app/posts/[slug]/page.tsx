@@ -16,18 +16,14 @@ export default async function Post(props: Params) {
     return notFound();
   }
 
-  const {html: content, toc} = await markdownToHtml(post.content || "");
+  const { html: content, toc } = await markdownToHtml(post.content || "");
 
   return (
     <main>
       <Container>
         <Header />
         <article className="mb-32">
-          <PostHeader
-            title={post.title}
-            date={post.date}
-            lang={post.lang}
-          />
+          <PostHeader title={post.title} date={post.date} lang={post.lang} />
           <div className="grid md:grid-cols-4 grid-cols-1">
             <PostBody content={content} />
             <PostToc toc={toc} title={post.title} />
@@ -55,7 +51,20 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   const title = `${post.title} | tchen's blog.`;
 
   return {
-    title
+    title,
+    openGraph: {
+      title,
+      siteName: "tchen's blog",
+      images: [
+        {
+          url: `https://blog.regularofvanilla.com/posts/${params.slug}/opengraph-image`, 
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: post.lang == 'JA' ? "ja_JP": "en_US",
+      type: "website",
+    },
   };
 }
 
