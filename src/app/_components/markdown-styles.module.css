@@ -3,8 +3,6 @@
 }
 
 .markdown p,
-.markdown ul,
-.markdown ol,
 .markdown blockquote,
 .markdown div {
   @apply my-6 md:text-base text-sm;
@@ -22,18 +20,35 @@
   @apply text-xl md:text-2xl mt-8 mb-4 leading-relaxed font-bold;
 }
 
-.markdown ul>li {
-  @apply list-disc;
+
+.markdown ul,
+.markdown ol {
+  @apply my-6 md:text-base text-sm;
+  & > li {
+    @apply my-1.5 leading-relaxed ml-4 pl-2;
+  }
+  & ul,
+  & ol {
+    @apply my-0.5;
+  }
+  & p {
+    @apply m-0;
+  }
 }
 
-.markdown ol>li {
-  @apply list-decimal;
+.markdown ul {
+  @apply pl-3;
+  & > li {
+    @apply list-disc;
+  }
 }
 
-.markdown li {
-  @apply leading-relaxed ml-8 pl-4;
+.markdown ol {
+  @apply pl-3;
+  & > li {
+    @apply list-decimal;
+  }
 }
-
 
 .markdown a {
   @apply underline text-sky-700;
@@ -52,7 +67,7 @@ html[class*="dark"] .markdown a {
 }
 
 .markdown code {
-  @apply py-1 px-1.5 bg-sky-100 md:text-sm text-xs rounded;
+  @apply py-0.5 px-1.5 bg-sky-100 md:text-sm text-xs rounded;
   vertical-align: .08em;
 }
 
