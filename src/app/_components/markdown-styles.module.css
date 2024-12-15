@@ -114,3 +114,7 @@ html[class*="dark"] .markdown pre code {
 .markdown details[open]>div {
   @apply border-cyan-400 border-r border-b border-l rounded-bl-lg rounded-br-lg p-8 mt-0;
 }
+.markdown blockquote {
+  @apply mx-3 border-cyan-400 border-l-4 rounded pl-6 py-0.5 bg-opacity-50 bg-gray-800;
+  font-size: 0.97em;
+}
