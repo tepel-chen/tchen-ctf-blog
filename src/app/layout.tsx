@@ -4,6 +4,7 @@ import cn from "classnames";
 import { ThemeSwitcher } from "./_components/theme-switcher";
 
 import "./globals.css";
+import 'markdown-it-latex/dist/index.css'
 
 const inter = Inter({ subsets: ["latin"] });
 

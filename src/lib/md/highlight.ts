@@ -8,6 +8,7 @@ import "prismjs/components/prism-php.min.js";
 import "prismjs/components/prism-java.min.js";
 import "prismjs/components/prism-docker.min.js";
 import "prismjs/components/prism-nginx.min.js";
+import "prismjs/components/prism-c.min.js";
 import "prismjs/components/prism-diff.min.js";
 
 

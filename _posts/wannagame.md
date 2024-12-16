@@ -424,7 +424,7 @@ There are three virtual servers running:
 
 In the first proxy server, most paths will match `^(.*)$`. However, we can use the fact that line breaks don't match the `.` character in regular expression.
 
-The path such as `/firefly%0a%0d` will match `/firefly` but not `^(.*)`. Hence, the request will be proxied to the inner server.
+The path such as `/firefly%0a%0d` will match `/firefly` but not `^(.*)$`. Hence, the request will be proxied to the inner server.
 
 The path we want to achieve in the end is `/flag`. Hence, we need to somehow remove `/firefly` part. One way to do this is by accessing `/firefly/../flag`. When this is passed to `new URL(path, RE_GECKO_URL)`, it will simplify to `/flag`.
 

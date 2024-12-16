@@ -3,6 +3,7 @@ import { mdRendererFence } from "./md/md-renderer-fence";
 import mdContainer from "markdown-it-container";
 import mdnh from 'markdown-it-anchor';
 import type Token from "markdown-it/lib/token.mjs";
+import markdownItLatex from 'markdown-it-latex';
 import { parseToc } from "./toc";
 const md = MarkdownIt({
   breaks: true,
@@ -54,6 +55,7 @@ const containerMessageOptions = {
 
 var used_headers: Record<string, number> = {}
 md.use(mdRendererFence)
+  .use(markdownItLatex)
   .use(mdnh, {
     slugify: (s: string) => s.replace("✅", "").replace(/\([^()]*\)/g, "").trim()
   })
