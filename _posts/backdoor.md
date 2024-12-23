@@ -278,7 +278,9 @@ The revenge challenge now sanitizes the content of `color` parameter.
  if __name__ == '__main__':
      app.run()
 ```
-### Step 1: Accessing the site with cookie
+### Solution
+
+#### Step 1: Accessing the site with cookie
 
 We want to use CSS injection to leak the flag. To do that, we need to somehow make `window.name === "Flag"` evaluate to true.
 
@@ -305,7 +307,7 @@ await page.setExtraHTTPHeaders({
 I'm not sure why, but this wasn’t possible if I used `window.open`. Using an `<iframe>` worked just fine.
 
 
-### Step 2: CSS Injection
+#### Step 2: CSS Injection
 
 [Reference: HackTricks - CSS Injection](https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection#text-node-exfiltration-i-ligatures)
 
