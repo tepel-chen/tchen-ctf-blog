@@ -1,6 +1,6 @@
 ---
 title: "TSG CTF 2024 - writeup"
-date: "2024-12-31T00:00:00.000Z"
+date: "2024-12-15T00:00:00.000Z"
 lang: JA
 ---
 
