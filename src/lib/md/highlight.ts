@@ -11,6 +11,7 @@ import "prismjs/components/prism-nginx.min.js";
 import "prismjs/components/prism-c.min.js";
 import "prismjs/components/prism-ejs.min.js";
 import "prismjs/components/prism-css.min.js";
+import "prismjs/components/prism-clojure.min.js";
 import "prismjs/components/prism-diff.min.js";
 
 
