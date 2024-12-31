@@ -224,9 +224,9 @@ print(r.text)
 ```
 
 
-## Ada Indonesia Coy (500pts 0 solves)
+## Ada Indonesia Coy 
 
-(This is an upsolve. Please read [the author's writeup](https://nolangilardi.github.io/blog/2024-0xl4ugh-ctf--ada-indonesia-coy/) for the more detailed approach.)
+(This is an upsolve. Please read [writeup nolang's](https://nolangilardi.github.io/blog/2024-0xl4ugh-ctf--ada-indonesia-coy/) for the more detailed approach. My exploit is created based on this writeup)
 
 ![alt text](/assets/blog/0xl4ugh/image1.png)
 
