@@ -718,7 +718,7 @@ def gen_filename(username, filename, timestamp=None):
     return hash_value
 ```
 
-However, this function is used wrong, and the arguments are swapped.
+However, my teammate found out that this function is used wrong, and the arguments are swapped.
 
 ```python
 save_filename = f"{gen_filename(file.filename, user.username)}{ext}"
