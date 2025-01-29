@@ -4,7 +4,7 @@ date: "2025-01-27T00:00:00.000Z"
 lang: JA
 ---
 
-## 🩸 [Web] kittyconvert (204pts 25solves)
+## ✅ [Web] kittyconvert (204pts 25solves)
 
 [ソースコード](https://github.com/x3ctf/challenges-2025/tree/main/web/kittyconvert/challenge-handout)
 
@@ -396,7 +396,7 @@ if __name__ == "__main__":
 </html>
 ```
 
-## 🩸 [Web] mvmcheckers-inc (211pts 24solves)
+## ✅ [Web] mvmcheckers-inc (211pts 24solves)
 
 [ソースコード](https://github.com/x3ctf/challenges-2025/tree/main/web/MVMCheckers-Inc/challenge-handout)
 
