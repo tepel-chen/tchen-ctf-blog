@@ -9,7 +9,7 @@ const Header = () => {
         </Link>
         .
       </h2>
-      <div className="flex bg-cyan-50 px-4 py-1 rounded-full ml-64 mt-4">
+      <div className="flex bg-cyan-50 px-4 py-1 rounded-full ml-80 mt-4">
         <a href="https://github.com/tepel-chen" className="mx-3 mt-0.5">
           <img src="/assets/github-mark.svg" height="24" width="24" />
         </a>
