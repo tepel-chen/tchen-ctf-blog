@@ -46,7 +46,7 @@ export function PostToc({ toc, title }: Props) {
           <li key={item.id}>
             <a
               href={`#${item.id}`}
-              className={`text-sky-700 dark:text-sky-400 hover:underline hover:text-cyan-800 dark:hover:text-cyan-600 ${
+              className={`text-sky-700 dark:text-sky-400 hover:underline hover:text-cyan-800 dark:hover:text-cyan-600 text-sm ${
                 activeId === item.id
                   ? "font-bold text-cyan-800 dark:!text-cyan-200"
                   : ""

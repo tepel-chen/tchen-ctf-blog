@@ -117,4 +117,5 @@ html[class*="dark"] .markdown pre code {
 .markdown blockquote {
   @apply mx-3 border-cyan-400 border-l-4 rounded pl-6 py-0.5 bg-opacity-50 bg-gray-800;
   font-size: 0.97em;
+  overflow: auto;
 }
