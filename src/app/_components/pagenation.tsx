@@ -8,7 +8,7 @@ type Props = {
 
 export function Pagenation({ currentPage, totalPages, pathAndQuery }: Props) {
   return (
-    <div className="grid grid-cols-3 items-center gap-2 w-fit mx-auto">
+    <div className="grid grid-cols-3 items-center gap-2 w-fit mx-auto mb-32">
       <button
         onClick={() => {
           if (currentPage > 1) {

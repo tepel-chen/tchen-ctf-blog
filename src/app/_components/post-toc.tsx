@@ -65,7 +65,7 @@ export function PostToc({ toc, title }: Props) {
 
   return (
     <div className="col-span-1 md:order-2 order-1">
-      <nav className="sticky top-4 p-4 overflow-auto">
+      <nav className="sticky top-4 p-4 overflow-auto max-h-screen">
         <h2 className="text-xl font-bold mb-8">{title}</h2>
         {renderToc(toc)}
       </nav>
