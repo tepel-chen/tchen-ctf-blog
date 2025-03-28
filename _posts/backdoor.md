@@ -190,7 +190,7 @@ Because DOMPurify does not delete `id` attribute, we can control the value of `w
 
 #### Step 2: Getting the flag 
 
-Now you can make the bot access the flag server in various ways, such as via an iframe, such as iframe, `window.open` or location change.
+Now you can make the bot access the flag server in various ways, such as iframe, `window.open` or location change.
 
 By setting the `color` parameters, you can inject any string here:
 
