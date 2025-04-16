@@ -71,6 +71,18 @@ html[class*="dark"] .markdown a {
   vertical-align: .08em;
 }
 
+.markdown h2 code {
+  @apply text-2xl md:text-3xl;
+}
+
+.markdown h3 code {
+  @apply text-xl md:text-2xl;
+}
+
+.markdown h4 code {
+  @apply text-lg md:text-xl;
+}
+
 html[class*="dark"] .markdown code {
   @apply bg-cyan-900;
 }

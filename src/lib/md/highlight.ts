@@ -15,6 +15,7 @@ import "prismjs/components/prism-clojure.min.js";
 import "prismjs/components/prism-json.min.js";
 import "prismjs/components/prism-go.min.js";
 import "prismjs/components/prism-typescript.min.js";
+import "prismjs/components/prism-elixir.min.js";
 import "prismjs/components/prism-graphql.min.js";
 import "prismjs/components/prism-ruby.min.js";
 import "prismjs/components/prism-visual-basic.min.js";
