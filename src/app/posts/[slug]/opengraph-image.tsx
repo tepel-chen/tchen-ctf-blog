@@ -1,8 +1,8 @@
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import { notFound } from "next/navigation";
-import { Inter } from "next/font/google";
-import cn from "classnames";
 import { ImageResponse } from "next/og";
+import { readFile } from 'node:fs/promises'
+import { join } from 'node:path'
 
 export const runtime = "nodejs";
 
@@ -12,12 +12,13 @@ export const size = {
   height: 630,
 };
 export const contentType = "image/png";
-const inter = Inter({ subsets: ["latin"] });
 
 export default async function OGPImage(props: Params) {
   const params = await props.params;
   const post = getPostBySlug(params.slug);
-
+  const notosans = await readFile(
+    join(process.cwd(), 'public/assets/NotoSansJP-Regular.ttf')
+  )
   if (!post) {
     return notFound();
   }
@@ -27,7 +28,7 @@ export default async function OGPImage(props: Params) {
       <div
         style={{
           display: "flex",
-          fontFamily: "ui-sans-serif",
+          fontFamily: "notosans",
           color: "#a5f3fc",
           backgroundColor: "#083344",
           width: "100%",
@@ -43,6 +44,14 @@ export default async function OGPImage(props: Params) {
     ),
     {
       ...size,
+      fonts: [
+        {
+          name: 'notosans',
+          data: notosans,
+          style: 'normal',
+          weight: 400,
+        },
+      ],
     }
   );
 }
